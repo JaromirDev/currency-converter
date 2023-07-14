@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Walut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page">
+
+    <div class="form">
+        <form>
+            <fieldset class="form__fieldset js-form">
+                <legend class="form__legend">Kalkulator walut z PLN</legend>
+
+                <p class="form__paragraph"><label>Wpisz kwotę w PLN: <input required type="number" 
+                            class="js-pln" min="0">
+                    </label> </p>
+
+                <p class="form__paragraph"><label> Wybierz walutę: <select name="currencyChoice" step="any"
+                            class="js-currency">
+                            <option value="euro">Euro (EUR)</option>
+                            <option value="usd">Dolar amerykański (USD)</option>
+                            <option value="chf">Frank szwajcarski (CHF)</option>
+                            <option value="cny">Yuan Chiński (CNY)</option>
+                        </select>
+                    </label></p>
+            </fieldset>
+        </form>
+
+        <p class="form__paragraph-result">Wynik:<strong class="calculator__result-value js-result"></strong></p>
+
+    </div>
+
+    <div class="conteiner__buttons">
+        <p><button class="conteiner__button-calculate js-calculate">Przelicz</button></p>
+        <p><button class="conteiner__button-clear js-clear">Wyczyść</button></p>
+    </div>
+
+    <footer class="footer">Jaromir Kowerski - moduł 4 | 05.2023</footer>
+
+</body>
+
+</html>
