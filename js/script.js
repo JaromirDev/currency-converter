@@ -1,9 +1,10 @@
-let plnElement = document.querySelector(".js-pln");
-let currencyElement = document.querySelector(".js-currency");
-let resultElement = document.querySelector(".js-result");
-let pressButton = document.querySelector(".js-calculate")
-let clearButton = document.querySelector(".js-clear");
-let formElement = document.querySelector(".js-form")
+{
+const plnElement = document.querySelector(".js-pln");
+const currencyElement = document.querySelector(".js-currency");
+const resultElement = document.querySelector(".js-result");
+const pressButton = document.querySelector(".js-calculate")
+const clearButton = document.querySelector(".js-clear");
+const formElement = document.querySelector(".js-form")
 let currencySymbol = '';
 
 formElement.addEventListener("submit", (event) => {
@@ -11,7 +12,7 @@ formElement.addEventListener("submit", (event) => {
 });
 
 pressButton.addEventListener("click", () => {
-    let pln = parseFloat(plnElement.value);
+    const pln = parseFloat(plnElement.value);
     let currency = currencyElement.value;
 
     switch (currency) {
@@ -46,3 +47,5 @@ clearButton.addEventListener("click", () => {
     plnElement.value = "";
     resultElement.textContent = "";
 });
+
+}
