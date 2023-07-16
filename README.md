@@ -13,3 +13,12 @@ Overall, this currency converter is a simple but effective tool for anyone who n
 ## Demo
 
 https://jaromirdev.github.io/currency-converter/
+
+## Technologies used:
+
+* HTML
+* BEM convention
+* CSS
+* Normalize CSS
+* JavaScript
+* GIT
